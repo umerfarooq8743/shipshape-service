@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/style.css" />
+    <title>Services</title>
+</head>
+<style type="text/css">
+    * {
+        font-family: 'raleway';
+    }
+    .navbar_second {
+        border-bottom: 1px solid rgb(187, 183, 183);
+    }  
+    
+    ul :hover {
+        font-weight: 700;
+    }
+    .active{
+        font-weight: 700;
+        color: black !important;
+    }
+    .profile_heading {
+        margin-top: 88px;
+    }
+    
+    .profile_image {
+        height: 85%;
+    }
+    
+    .profile_icon {
+        height: 20px;
+    }
+    /* mediaquery for phone------------------------------------------ */
+    
+    @media screen and (device-width: 375px) {
+        h1 {
+            font-size: 22px !important;
+        }
+        ul {
+            font-size: 16px;
+        }
+        .box {
+            height: 740px !important;
+            background-image: url("ship_mb.png") !important;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .card {
+            margin-top: 15px !important;
+        }
+        .profile_heading {
+            margin-top: 10px !important;
+            font-size: 15px !important;
+        }
+        .profile_rating{
+            font-size: 13px !important;
+        }
+        .profile_icon{
+            height: 15px !important;
+        }
+        
+        iframe {
+            height: 300px !important;
+            margin-top: 15px !important;
+        }
+        .card_details {
+            font-size: 20px !important;
+        }
+        .card_heading {
+            font-size: 30px !important;
+        }
+        .services_button{
+            font-size: 12px !important;
+        }
+        .green_box{
+            margin-top: 0px !important;
+            margin-bottom: 0px !important;
+        }
+        .body_button{
+            font-size: 12px !important;
+        }
+
+    }
+    /* mediaquery for phone------------------------------------------ */
+    /* mediaquery for tablet------------------------------------------ */
+    /* mediaquery for tablet------------------------------------------ */
+    
+    @media screen and (device-width: 768px) {
+        .profile_heading {
+            margin-top: 50px !important;
+        }
+
+        iframe{
+            height: 300px !important;
+        }
+    }
+    /* mediaquery for tablet------------------------------------------ */
+    
+    h1 {
+        font-weight: 900 !important;
+    }
+    
+    
+    
+    .card {
+        background-color: #f9f9f9;
+        border-radius: 7px;
+        margin-top: 30px;
+    }
+    
+    .card_details {
+        font-size: 16px;
+    }
+    
+    .catd_heading {
+        font-size: 1.5rem;
+    }
+    
+    h1 {
+        font-size: 40px;
+    }
+    
+    .search_space {
+        height: 30px;
+        width: 100%;
+        border: 3px solid rgb(209, 209, 209);
+        border-radius: 8px;
+        border-top-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        margin-bottom: 12px;
+    }
+    
+    .nav_search_space {
+        height: 30px;
+        width: 100%;
+        border: 3px solid rgb(209, 209, 209);
+        border-radius: 8px;
+        border-top-left-radius: 0px;
+        margin-bottom: 10px;
+    }
+    
+    .search_space2 {
+        width: 100%;
+        border: 3px solid rgb(209, 209, 209);
+        border-radius: 8px;
+        border-top-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    .font-weight-900 {
+        font-weight: 900;
+    }
+    .font-size-20 {
+        font-size: 20px;
+    }
+    .font-size-25 {
+        font-size: 25px;
+    }
+    .font-size-15 {
+        font-size: 15px;
+    }
+    .font-size-16 {
+        font-size: 16px;
+    }
+    .services_button{
+        height: 26px;
+    }
+    .green_box{
+        background-color: rgb(192, 255, 192); 
+        border-radius: 10px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+</style>
+<body>
+    <!-- navbar starts here ------------------------------------------------------------------------------>
+    <div class="container-fluid" style="height: 55px;">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-lg-2 col-md-4 col-5 py-4 py-md-3
+                            py-lg-3">
+                        <img src="shiplogo.png" alt="logo" class="img-fluid" />
+                    </div>
+                    <div class="col-lg-5 col-12 py-3 d-lg-inline-block
+                            d-none">
+                        <div class="row mb-3">
+                            <div class="col-md-8">
+                                <input type="email" class="form-control
+                                        border-top-0
+                                        border-right-0 nav_search_space" placeholder="I 'm looking for..." />
+                            </div>
+                            <div class="col-md-4">
+                                <button class="btn rounded-pill ml-n5
+                                        px-2" type="submit" style="padding:
+                                        2px; background-color: #4889ff">
+                                        <b class="text-white"><i class="fas
+                                                fa-search"></i> <span> Search
+                                            </span></b>
+                                    </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-8 col-7 py-3">
+                        <nav class="navbar navbar-expand-lg navbar-expand-md
+                                navbar-expand navbar-light float-right p-0">
+                            <div class="" id="navbarSupportedContent">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item">
+                                        <a class="nav-link text-muted" href="#">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-muted" href="Signup.html">Sign Up</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link text-muted" href="#">Login</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- navbar ends here ------------------------------------------------------------------------------>
+    <div class="container-fluid" style="max-width: 1400px;">
+        <div class="row">
+            <div class="col-lg-7 ">
+                <!-- left side work code should be here --------------------------------------------------------->
+                <nav class="navbar navbar-expand-lg navbar-expand-md
+                                navbar-expand navbar-light p-0 navbar_second">
+                    <div class="" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link text-muted pl-0 pl-lg-0" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-muted active" href="#">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-muted" href="#">Photos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-muted" href="#">Reviews</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-muted" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="row">
+                    <div class="col-lg-8 col-md-12 col-12">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-4 ml-lg-4 mt-3 mt-lg-5">
+                                <img src="solar.png" alt="" class="img-fluid w-100 profile_image">
+                            </div>
+                            <div class="col-lg-7 col-md-6 col-6 profile_heading">
+                                <div class="row ">
+                                    <p class="font-weight-bold m-0
+                                            profile_heading font-size-25">Safety Boating Company</p>
+                                </div>
+                                <div class="row">
+                                    <p class="text-primary m-0 profile_rating"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i> 0.0
+                                        <span class="text-muted">(0)</span></p>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-5 p-0">
+                                        <p class="m-0 font-size-15 profile_rating "><img src="shipshape pin.png" alt="" class="img-fluid profile_icon"> Licensed                                            
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-5 p-0">
+                                        <p class="m-0 font-size-15 profile_rating"><img src="star pin.png" alt="" class="img-fluid profile_icon"> Insured</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                       
+                    </div>
+                    <div class="col-lg-4 d-none d-lg-inline-block">
+                        <div class="card">
+                            <div class="card-body mb-3 float-end">
+                              <div class="row">
+                                <div class="col-lg-12 text-center">
+                                  <h4>SHIPSHAPE<sup class="font-weight-900 font-size-15">PRO</sup></h4>
+                                  <button class="btn  mt-2 btn-primary upgrade-btn btn-block font-weight-bold" type="button"
+                                    style="border-radius: 12px;">Upgrade
+                                    Now</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>                    
+                </div>                
+                <div class="row ml-lg-4 mb-2 d-flex justify-content-around">
+                    <div class="col-lg-10">
+                        <div class="row"> 
+                            <div class="col-lg-12 col-md-12 col-12 px-lg-0 d-flex ">                         
+                                <a href="" class="btn btn-border border-secondary rounded-pill font-size-15 mx-auto py-0 mr-lg-2 py-lg-0 services_button">electrical<a>                    
+                                <a href="" class="btn btn-border border-secondary rounded-pill font-size-15 mx-auto py-0 mr-lg-2 py-lg-0 services_button">mechanical</a>
+                                <a href="" class="btn btn-border border-secondary rounded-pill font-size-15 mx-auto py-0 mr-lg-2 py-lg-0 services_button">repairs</a>
+                                <a href="" class="btn btn-border border-secondary rounded-pill font-size-15 mx-auto py-0 mr-lg-2 py-lg-0 services_button">welding</a>
+                                <a href="" class="btn btn-border border-secondary rounded-pill font-size-15 mx-auto py-0 mr-lg-2 py-lg-0 services_button d-none d-md-none d-lg-inline-block">electrical</a>
+                                <a href="" class="btn btn-border border-secondary rounded-pill font-size-15 mr-1 py-0 mr-lg-2 py-lg-0 services_button d-none d-md-none d-lg-inline-block">mechanical</a>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="col-lg-2 mb-2"></div>
+                </div>
+                <div class="row ml-lg-4 mb-2 d-lg-flex justify-content-around d-none d-lg-block d-md-none">
+                    <div class="col-lg-10">
+                        <div class="row"> 
+                            <div class="col-lg-12 col-md-12 col-12 px-lg-0 d-flex ">                         
+                                <a href="" class="btn btn-border border-secondary rounded-pill font-size-15 mx-auto py-0 mr-lg-2 py-lg-0 services_button">electrical<a>                    
+                                <a href="" class="btn btn-border border-secondary rounded-pill font-size-15 mx-auto py-0 mr-lg-2 py-lg-0 services_button">mechanical</a>
+                                <a href="" class="btn btn-border border-secondary rounded-pill font-size-15 mx-auto py-0 mr-lg-2 py-lg-0 services_button">repairs</a>
+                                <a href="" class="btn btn-border border-secondary rounded-pill font-size-15 mx-auto py-0 mr-lg-2 py-lg-0 services_button">welding</a>
+                                <a href="" class="btn btn-border border-secondary rounded-pill font-size-15 mx-auto py-0 mr-lg-2 py-lg-0 services_button d-none d-md-none d-lg-inline-block">electrical</a>
+                                <a href="" class="btn btn-border border-secondary rounded-pill font-size-15 mr-1 py-0 mr-lg-2 py-lg-0 services_button d-none d-md-none d-lg-inline-block">mechanical</a>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="col-lg-2 mb-2"></div>
+                </div>
+                <div class="row ml-lg-4 mb-2 d-lg-flex justify-content-around d-none d-lg-block d-md-none">
+                    <div class="col-lg-10">
+                        <div class="row"> 
+                            <div class="col-lg-12 col-md-12 col-12 px-lg-0 d-flex ">                         
+                                <a href="" class="btn btn-border border-secondary rounded-pill font-size-15 mx-auto py-0 mr-lg-2 py-lg-0 services_button">electrical<a>                    
+                                <a href="" class="btn btn-border border-secondary rounded-pill font-size-15 mx-auto py-0 mr-lg-2 py-lg-0 services_button">mechanical</a>
+                                <a href="" class="btn btn-border border-secondary rounded-pill font-size-15 mx-auto py-0 mr-lg-2 py-lg-0 services_button">repairs</a>
+                                <a href="" class="btn btn-border border-secondary rounded-pill font-size-15 mx-auto py-0 mr-lg-2 py-lg-0 services_button">welding</a>
+                                <a href="" class="btn btn-border border-secondary rounded-pill font-size-15 mx-auto py-0 mr-lg-2 py-lg-0 services_button d-none d-md-none d-lg-inline-block">electrical</a>
+                                <a href="" class="btn btn-border border-secondary rounded-pill font-size-15 mr-1 py-0 mr-lg-2 py-lg-0 services_button d-none d-md-none d-lg-inline-block">mechanical</a>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="col-lg-2 mb-2"></div>
+                </div>          
+                             
+               
+                <div class="row ml-lg-4 info_box px-lg-0 mx-0">
+                    <div class="col-lg-10 col-12 text-center font-size-15 card green_box my-md-2">
+                        <div class="card-body">
+                            <p class="m-lg-2 card-text"> <span class=" font-weight-900"> 10% discount for ShipShape members </span>(offer valid till 2/14/22)</p>
+                        </div>
+                        
+                    </div>
+                    <div class="col-lg-2"></div>
+                </div>
+                <div class="row ml-lg-4 mt-2">
+                    <div class="col-lg-10 font-size-15 px-lg-0">
+                        <p class="font-size-16">We did not add any photos and haven't gotten any reviews so our profile so our profile looks like this. User clicked on <a href="">Show 17 more services > </a>next to the tagged categories or <a href="">Services</a> in menu bar so all categories are shown.</p>
+                    </div>
+                    <div class="col-lg-2"></div>
+                </div>
+                <div class="row ml-lg-4 ">
+                    <div class="col-lg-12 font-size-15 px-lg-0">
+                        <p class="font-size-16 m-0">4707 Pretty Lake Ave.</p>
+                        <p class="font-size-16 m-0">Brooklyn. NY. 11249</p>
+                        <p class="font-size-15 text-muted my-lg-1">(2.9 miles away)</p>
+                        <p class="font-size-16 my-lg-2">Monday - Saturday 9:00am - 5:00pm</p>
+                        <p class="font-size-16 my-lg-1"><a href="">www.safetyboatingcompany.com</a></p>
+                    </div>                    
+                </div>
+                <div class="row ml-lg-4 my-lg-4">
+                    <div class="col-lg-2 col-3 p-0 mr-lg-1">
+                        <a href="" class="btn btn-primary rounded-pill btn-block font-weight-bold font-size-15 text-white body_button "> <img src="contact.png" alt="" style="width: 18px;"> <span>  Contact</span></a>
+                    </div>                  
+                    <div class="col-lg-2 col-3 p-0 mr-lg-1">
+                        <a href="" class="btn border-secondary rounded-pill btn-block font-weight-bold font-size-15 text-muted body_button"> <img src="edit grey.png" alt="" style="width: 18px;"> <span>  Review</span></a>
+                    </div>                  
+                    <div class="col-lg-2 col-3 p-0 mr-lg-1">
+                        <a href="" class="btn border-secondary rounded-pill btn-block font-weight-bold font-size-15 text-muted body_button"> <img src="share grey.png" alt="" style="width: 15px;"> <span>  Share</span></a>
+                    </div>                  
+                    <div class="col-lg-2 col-3 p-0 mr-lg-1">
+                        <a href="" class="btn border-secondary rounded-pill btn-block font-weight-bold font-size-15 text-muted body_button"> <img src="claim grey.png" alt="" style="width: 18px;"> <span>Claim</span> </a>
+                    </div>                  
+                </div>
+                
+                
+               
+                
+                <!-- left side work code should be here --------------------------------------------------------->
+            </div>
+            <div class="col-lg-5 col-12 mt-md-3 order-lg-0 order-md-first order-first">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.9550896210253!2d67.20355711486926!3d24.899513484035374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb337373d88e5a5%3A0xb59129353df3b2ae!2sservices4digital!5e0!3m2!1sen!2s!4v1617744909099!5m2!1sen!2s "
+                    style="border:0; width: 100%; height: 720px; " allowfullscreen=" " loading="lazy "></iframe>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
